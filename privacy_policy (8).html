@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fluvio — Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --amber:   #FF9F1C;
+      --amber-dk:#E08000;
+      --cream:   #FFF8EE;
+      --brown:   #4A2800;
+      --mid:     #8B5E2A;
+      --light:   #C8A060;
+      --border:  #E8C580;
+      --card:    #FFFAF3;
+      --green:   #2E7D32;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   Helvetica, Arial, sans-serif;
+      background: var(--cream);
+      color: var(--brown);
+      line-height: 1.75;
+      font-size: 16px;
+    }
+
+    /* ── Header ─────────────────────────────────────────────────────────── */
+    header {
+      background: linear-gradient(135deg, var(--amber) 0%, #FFD080 100%);
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+
+    .logo-ring {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px; height: 72px;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
+      margin-bottom: 18px;
+    }
+
+    .logo-dots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5px;
+      padding: 4px;
+    }
+
+    .logo-dots span {
+      width: 22px; height: 22px;
+      border-radius: 50%;
+    }
+
+    header h1 {
+      font-size: 38px;
+      font-weight: 900;
+      letter-spacing: -1px;
+      color: var(--brown);
+      margin-bottom: 6px;
+    }
+
+    header p.sub {
+      font-size: 15px;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    /* ── Layout ──────────────────────────────────────────────────────────── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    /* ── Effective date banner ───────────────────────────────────────────── */
+    .date-banner {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px 20px;
+      margin: 36px 0 32px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      color: var(--mid);
+      font-weight: 600;
+    }
+
+    .date-banner svg { flex-shrink: 0; }
+
+    /* ── Highlights ──────────────────────────────────────────────────────── */
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+      gap: 14px;
+      margin-bottom: 44px;
+    }
+
+    .highlight-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 16px;
+      text-align: center;
+    }
+
+    .highlight-card .icon {
+      font-size: 28px;
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .highlight-card strong {
+      display: block;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--brown);
+      margin-bottom: 3px;
+    }
+
+    .highlight-card span {
+      font-size: 12px;
+      color: var(--mid);
+    }
+
+    /* ── Sections ────────────────────────────────────────────────────────── */
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--brown);
+      margin-bottom: 14px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    section h2 .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      background: var(--amber);
+      color: white;
+      border-radius: 50%;
+      font-size: 13px;
+      font-weight: 900;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    section p { margin-bottom: 14px; color: var(--brown); }
+    section p:last-child { margin-bottom: 0; }
+
+    section ul {
+      padding-left: 22px;
+      margin-bottom: 14px;
+      color: var(--brown);
+    }
+
+    section ul li { margin-bottom: 6px; }
+
+    /* ── Callout box ─────────────────────────────────────────────────────── */
+    .callout {
+      background: #EBF5EB;
+      border-left: 4px solid var(--green);
+      border-radius: 0 10px 10px 0;
+      padding: 16px 20px;
+      margin: 18px 0;
+      font-size: 15px;
+      color: #1B3A1B;
+    }
+
+    .callout strong { font-weight: 800; }
+
+    .callout-amber {
+      background: #FFF3DC;
+      border-left-color: var(--amber-dk);
+      color: var(--brown);
+    }
+
+    /* ── Table ───────────────────────────────────────────────────────────── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    th {
+      background: var(--amber);
+      color: white;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 800;
+    }
+
+    th:first-child { border-radius: 8px 0 0 0; }
+    th:last-child  { border-radius: 0 8px 0 0; }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--brown);
+      vertical-align: top;
+    }
+
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #FFFAF0; }
+
+    /* ── Contact card ────────────────────────────────────────────────────── */
+    .contact-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    .contact-card a {
+      color: var(--amber-dk);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 15px;
+    }
+
+    .contact-row:last-child { border-bottom: none; }
+
+    /* ── Footer ──────────────────────────────────────────────────────────── */
+    footer {
+      background: var(--amber);
+      padding: 28px 24px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+      color: var(--brown);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    footer p:last-child { margin-bottom: 0; opacity: 0.7; font-weight: 400; }
+
+    @media (max-width: 500px) {
+      header h1 { font-size: 30px; }
+      .highlights { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="logo-ring">
+    <div class="logo-dots">
+      <span style="background:#E53935"></span>
+      <span style="background:#1E88E5"></span>
+      <span style="background:#43A047"></span>
+      <span style="background:#FFB300"></span>
+    </div>
+  </div>
+  <h1>Fluvio</h1>
+  <p class="sub">Privacy Policy</p>
+</header>
+
+<div class="container">
+
+  <!-- Effective date -->
+  <div class="date-banner">
+    <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+         viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+    <span>Effective date: <strong>June 2025</strong> &nbsp;·&nbsp; Last updated: <strong>June 2025</strong></span>
+  </div>
+
+  <!-- Highlights -->
+  <div class="highlights">
+    <div class="highlight-card">
+      <span class="icon">🔒</span>
+      <strong>No data collected</strong>
+      <span>We collect zero personal information</span>
+    </div>
+    <div class="highlight-card">
+      <span class="icon">📵</span>
+      <strong>No internet needed</strong>
+      <span>Fully offline — plays anywhere</span>
+    </div>
+    <div class="highlight-card">
+      <span class="icon">📱</span>
+      <strong>Local storage only</strong>
+      <span>Progress stays on your device</span>
+    </div>
+    <div class="highlight-card">
+      <span class="icon">🚫</span>
+      <strong>No ads or trackers</strong>
+      <span>No third-party SDKs</span>
+    </div>
+  </div>
+
+  <!-- 1. Introduction -->
+  <section>
+    <h2><span class="num">1</span>Introduction</h2>
+    <p>
+      Fluvio ("the App", "we", "our", "us") is a mobile puzzle game developed and
+      published by <strong>Kadesh</strong>. This Privacy Policy explains what information
+      the App handles, how it is stored, and your rights in relation to it.
+    </p>
+    <p>
+      By downloading or playing Fluvio, you agree to the practices described in this
+      Privacy Policy. If you do not agree, please uninstall the App.
+    </p>
+  </section>
+
+  <!-- 2. Information we collect -->
+  <section>
+    <h2><span class="num">2</span>Information We Collect</h2>
+
+    <div class="callout">
+      <strong>Short answer: none.</strong> Fluvio does not collect, transmit, or store
+      any personally identifiable information from you.
+    </div>
+
+    <p>
+      The App stores the following data <strong>locally on your device only</strong>,
+      using Android's SharedPreferences (a standard on-device key-value store):
+    </p>
+
+    <table>
+      <thead>
+        <tr><th>Data item</th><th>Purpose</th><th>Where stored</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Level star ratings (0–3 per level)</td>
+          <td>Remember your best score per level</td>
+          <td>Device only</td>
+        </tr>
+        <tr>
+          <td>App version key</td>
+          <td>Detect when level data has changed and reset stale progress</td>
+          <td>Device only</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>
+      This data <strong>never leaves your device</strong>. It is not transmitted to any
+      server, and we have no access to it.
+    </p>
+  </section>
+
+  <!-- 3. Information we do NOT collect -->
+  <section>
+    <h2><span class="num">3</span>Information We Do Not Collect</h2>
+    <p>Fluvio does not collect, and has no access to:</p>
+    <ul>
+      <li>Your name, email address, or any contact information</li>
+      <li>Device identifiers (IMEI, Advertising ID, Android ID)</li>
+      <li>Location data (GPS or network-based)</li>
+      <li>Contacts, camera, microphone, or any other sensitive permission</li>
+      <li>Usage analytics or crash reports</li>
+      <li>Financial or payment information</li>
+      <li>Any data from other apps on your device</li>
+    </ul>
+  </section>
+
+  <!-- 4. Internet & permissions -->
+  <section>
+    <h2><span class="num">4</span>Internet Access &amp; Permissions</h2>
+
+    <div class="callout callout-amber">
+      Fluvio does <strong>not</strong> require or use an internet connection. The App
+      functions entirely offline.
+    </div>
+
+    <p>
+      The only Android permission the App requests is access to local storage
+      (SharedPreferences) for saving your game progress. No network permission is
+      declared in the App manifest.
+    </p>
+  </section>
+
+  <!-- 5. Third-party services -->
+  <section>
+    <h2><span class="num">5</span>Third-Party Services</h2>
+    <p>
+      Fluvio does <strong>not</strong> integrate any third-party SDKs, analytics
+      libraries, advertising networks, or social login services. There are no
+      third parties with whom your data is shared, because no data is collected
+      in the first place.
+    </p>
+    <p>
+      The App is distributed via the <strong>Google Play Store</strong>. Google's
+      own privacy practices apply to the download and installation process and are
+      governed by Google's Privacy Policy, which is independent of this document.
+    </p>
+  </section>
+
+  <!-- 6. Children -->
+  <section>
+    <h2><span class="num">6</span>Children's Privacy</h2>
+    <p>
+      Fluvio is rated <strong>Everyone (3+)</strong> and is suitable for all ages,
+      including children under 13. Because the App collects no personal information
+      whatsoever, it complies with the Children's Online Privacy Protection Act
+      (COPPA) and similar regulations worldwide.
+    </p>
+    <p>
+      Parents and guardians can allow children to use the App with confidence that
+      no personal data is gathered or transmitted.
+    </p>
+  </section>
+
+  <!-- 7. Data security -->
+  <section>
+    <h2><span class="num">7</span>Data Security</h2>
+    <p>
+      Because the only data stored is simple gameplay progress (star ratings) held
+      locally on your device, there is no data transmission to secure. Your device's
+      built-in security (lock screen, encryption) protects any locally stored
+      application data.
+    </p>
+    <p>
+      If you uninstall the App, all locally stored data is automatically deleted by
+      Android. You can also clear App data manually at any time via your device's
+      Settings → Apps → Fluvio → Clear Data.
+    </p>
+  </section>
+
+  <!-- 8. Your rights -->
+  <section>
+    <h2><span class="num">8</span>Your Rights</h2>
+    <p>
+      Since Fluvio does not collect personal data, most data-rights requests
+      (access, deletion, portability, objection) do not apply in practice.
+      However, if you have any questions or concerns, please contact us using the
+      details in Section 10 and we will respond within 30 days.
+    </p>
+    <p>
+      To delete all game data, simply clear the App's storage via your device
+      settings or uninstall the App.
+    </p>
+  </section>
+
+  <!-- 9. Changes -->
+  <section>
+    <h2><span class="num">9</span>Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any changes will be
+      posted at the URL where this document is hosted, and the "Last updated"
+      date at the top will be revised. For material changes, we will notify you
+      via an App update notice on the Play Store.
+    </p>
+    <p>
+      Continued use of the App after changes are posted constitutes acceptance of
+      the revised policy.
+    </p>
+  </section>
+
+  <!-- 10. Contact -->
+  <section>
+    <h2><span class="num">10</span>Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or the App's data
+      practices, please reach out:
+    </p>
+    <div class="contact-card">
+      <div class="contact-row">
+        <svg width="18" height="18" fill="none" stroke="#8B5E2A" stroke-width="2"
+             viewBox="0 0 24 24"><path d="M4 4h16v16H4z" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+        <span>Email: <a href="mailto:support@kadesh.dev">support@kadesh.dev</a></span>
+      </div>
+      <div class="contact-row">
+        <svg width="18" height="18" fill="none" stroke="#8B5E2A" stroke-width="2"
+             viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 010 20M12 2a15 15 0 000 20"/></svg>
+        <span>Website: <a href="https://kadesh.dev">kadesh.dev</a></span>
+      </div>
+      <div class="contact-row">
+        <svg width="18" height="18" fill="none" stroke="#8B5E2A" stroke-width="2"
+             viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Developer: <strong>Kadesh</strong></span>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<footer>
+  <p>Fluvio &nbsp;·&nbsp; Developed by Kadesh &nbsp;·&nbsp; © 2025 All rights reserved</p>
+  <p>This app does not collect personal data. Your privacy is fully respected.</p>
+</footer>
+
+</body>
+</html>
